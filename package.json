@@ -16,7 +16,10 @@
     "lodash": "^4.17.11"
   },
   "devDependencies": {
-    "gulp-gh-pages": "^0.5.4"
+    "gulp-gh-pages": "^0.5.4",
+    "minimatch": ">=3.0.2",
+    "cryptiles": ">=4.1.2",
+    "hoek": ">=4.2.1"
   },
   "scripts": {
     "dev": "gulp watch",
