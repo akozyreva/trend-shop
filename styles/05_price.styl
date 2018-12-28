@@ -1,0 +1,55 @@
+.price 
+	padding 60px 0
+	.price-item
+		position relative
+		background-color #fff
+		border-radius 25px
+		padding 30px
+		margin 0 10px 10px
+		height 700px
+		//сделали тень - чисто по макету подогнали
+		box-shadow 0 4px 7px 1px rgba(0,0,0,.15)
+		h3.price-item-title
+			color #333333
+			text-align center
+			font-size 24px
+			font-family "MuseoCyrl-700"	
+			
+			&:after
+				content ''
+				display block
+				width 20px
+				height 5px
+				margin 25px auto
+				border-radius 5px
+				background:#4a90e2
+			
+.price-list__descr
+	font-family "MuseoSansCyrl-300"
+	display block
+	font-size 14px
+	line-height 20px
+	color #999999
+	margin-bottom 15px
+	
+.price-item__bottom
+	//прижимаем элементы к нижнему краю
+	position absolute
+	bottom 30px
+	//а этим ходом выровнили на всю ширину
+	left 0
+	right 0
+	padding 30px 30px 0
+	border-top 1px solid #ebeff0
+	a
+		font-family "MuseoSansCyrl-500"
+		font-size 18px
+	.g-btn
+		box-shadow 0 4px 7px 1px rgba(0,0,0,.15)
+.price-item__number
+	display block
+	text-align center
+	font-size 32px
+	font-family "MuseoSansCyrl-700"
+	color #333
+	margin-bottom 20px

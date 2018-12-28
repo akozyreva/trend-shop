@@ -1,0 +1,109 @@
+.top-banner
+	//задаем высоту по размеру экрана - т.е. 
+	//вне зависииости от того, какой экран, всегда 
+	//высота будет на весь экран 
+	height 100vh
+	min-height 1000px
+	//позволит растянуть картинку на всю ширину
+	background-size cover
+	background url('../images/business.jpg') 0 0 no-repeat
+	display flex
+	flex-wrap wrap
+	//выравнивает контент по центру
+	align-content center
+	justify-content center
+	//поставили такое значение для того, чтобы разобраться с меню
+	position relative
+	h1
+		//нужно указать ширину, чтобы не сжирал много контента
+		width 100%
+		margin-bottom 100px
+		color #fff
+		font-size 48px
+		font-family "MuseoCyrl-700"
+		text-align center
+		line-height 70px
+		padding 0 10px
+.header
+	position absolute
+	top 0
+	left 0
+	width 100%
+	padding 20px 0
+	border-bottom 1px solid rgba(255,255,255,.2)
+	z-index 1
+	.container
+		display flex
+		flex-wrap wrap
+		//сделали равномерное расстояние между блоками
+		justify-content space-between
+		//сделали их по центру в этом контейнере!!!
+		align-items center
+		.logo
+			background: -webkit-linear-gradient(90deg, rgb(113, 122, 255), rgb(223, 119, 255));
+			-webkit-background-clip text
+			color transparent
+			span
+				display block
+				text-transform uppercase
+				margin-bottom 10px
+				font-family "MuseoSansCyrl-900"
+				&:last-child 
+					margin-bottom 0
+
+.main-nav__list
+	li 
+		display inline-block
+		margin-right 70px
+	a
+		font-family "MuseoSansCyrl-500"
+		color #fff
+	&.mobile-show
+		right -1.5%
+		transition all linear .8s
+
+.nav-mobile
+	display none
+	position absolute
+	//задали такие отступы, чтобы прям полоностью к углу прижаться
+	top -20px
+	right -1.5%
+	bottom -21px
+	cursor pointer
+	width 70px
+	//а это чтобы плавно возвращал цвет
+	background-color transparent
+	transition all linear .5s
+	//это значит - если есть класс актив, то стили такие
+	&.active
+		background-color #463d73
+		//плавная смена цвета
+		transition all linear .5s
+		.nav-mobile__line--top
+			top 50%
+			transform rotate(45deg) translateY(-50%)
+			transition all linear .5s	
+		.nav-mobile__line--middle
+			opacity 0
+			transition all linear .5s
+		.nav-mobile__line--bottom
+			top 50%
+			transform rotate(-45deg) translateY(-50%)
+			transition all linear .5s
+	.nav-mobile__line
+		position absolute
+		display block
+		width 30px
+		height 2px
+		left 20px
+		background-color white
+	.nav-mobile__line--top
+		top 48px
+		transition all linear .5s	
+	.nav-mobile__line--middle
+		top 58px
+		opacity 1
+		transition all linear .5s
+	.nav-mobile__line--bottom
+		top 68px
+		transition all linear .5s
