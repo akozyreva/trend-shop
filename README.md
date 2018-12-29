@@ -1,5 +1,4 @@
 # trend-shop
-# modus
 ## Demo
 https://akozyreva.github.io/trend-shop
 ## Description
